@@ -1,0 +1,64 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    background: red;
+    color: white;
+    width: 100px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+    font-size: 20px;
+    margin: 10px;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #F60;
+}
+
+ul {
+    width: auto;
+    border-top: 1px solid #F60;
+    padding: 9px;
+}
+
+a {
+    position: relative;
+    display: block;
+}
+
+a div {
+    display: none;
+}
+
+a:hover div {
+    position: absolute;
+    padding: 5px;
+    display: block;
+    width: auto;
+    left: 120px;
+    top: 20px;
+    border: 1px solid rgb(91, 185, 233);
+    background-color: rgb(228, 246, 255);
+    z-index: 999;
+}
+
+dl {
+    width: 160px;
+    float: right;
+    line-height: 50px;
+}
+
+dl dd span {
+    font-weight: bold;
+}

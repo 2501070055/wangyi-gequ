@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>网易热门歌曲</title>
+    <link rel="stylesheet" type="text/css" href="../static/gequ.css">
+</head>
+<body>
+<h3>热门单曲</h3>
+{% for item in form_list %}
+<ul>
+    <li><a href="#">{{ item.music }}<div>
+    <dl>
+        <dd><span>歌名:</span>{{ item.music }}</dd>
+        <dd><span>歌手:</span>{{ item.author }}</dd>
+    </dl> </div></a><audio src="https://music.163.com/song/media/outer/url?id={{ item.song }}.mp3" controls="autoplay"></audio>
+    </li>
+</ul>
+{% endfor %}
+</body>
+</html>
